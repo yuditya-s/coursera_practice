@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WEEK 1 - LIST</title>
+	</head>
+	<body>
+		<h1>Unordered list</h1>
+		<div>
+			<ul>
+			Ingredients of Nasi Goreng :
+				<li>Bawang putih</li>
+				<li>Bawang Bombay</li>
+				<li>Telur</li>
+				<li>Nasi Kemarin</li>
+				<li>Bumbu :
+					<ul>
+						<li>Saus Tomat</li>
+						<li>Kecap</li>
+						<li>Kaldu jamur</li>
+						<li>Cabe potong</li>
+					</ul>
+				</li>
+				<li>Daging dadu</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,44 +1,26 @@
-<!doctype html>
+<!doctype hmtl>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title> WEEK 2 - CSS SELECTOR</title>
+		<title>CSS Selector Combining</title>
 		<style>
-			.blue{
-				color: blue;
+			p.some-p-class{
+				font-weight: 1000;
+				font-size: 30px;
 			}
-			div, .blue{
-				text-shadow: 2px 2px #ff0000;
-			}
-			#some-id, #my_span{
-				text-align: center;
-				font-style: bold;
+			p > span{
+				font-style: italic;
 			}
 		</style>
 	</head>
 	<body>
-		<p id="some-id">
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
+		<!-- SPECIFIC ELEMENT with element + id/class -->
+		<p>Regular &lt;P&gt;</p>
+		<p class="some-p-class">&lt;P&gt; with class</p>
+		<!-- ELEMENT which is a child of other element -->
+		<p>lalalala this is not effected --- <span>Some text inside a &lt;span&gt; inside a &lt;p&gt; </span></p>
+		<p>
+			<div><span>This is also a span text but not a direct child of &lt;p&gt;</span></div>
 		</p>
-		<p class= "blue">
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-			This is paragraph. This is paragraph. This is paragraph <br />
-		</p>
-		<div class= "blue">
-			This a div sentence <span id="my_span">Some other thext in &quot;span&quot;</span>
-		</div>
 	</body>
 </html>

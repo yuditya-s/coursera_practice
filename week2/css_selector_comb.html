@@ -5,11 +5,14 @@
 		<title>CSS Selector Combining</title>
 		<style>
 			p.some-p-class{
-				font-weight: 900;
+				font-weight: 1000;
 				font-size: 30px;
 			}
 			p > span{
 				font-style: italic;
+			}
+			article p{
+				color: purple;
 			}
 		</style>
 	</head>
@@ -17,10 +20,18 @@
 		<!-- SPECIFIC ELEMENT with element + id/class -->
 		<p>Regular &lt;P&gt;</p>
 		<p class="some-p-class">&lt;P&gt; with class</p>
-		<!-- ELEMENT which is a child of other element -->
+		<!-- ELEMENT which is a DIRECT child of other element -->
 		<p>lalalala this is not effected --- <span>Some text inside a &lt;span&gt; inside a &lt;p&gt; </span></p>
 		<p>
 			<div><span>This is also a span text but not a direct child of &lt;p&gt;</span></div>
 		</p>
+		<!-- ELEMENT which is any child of a spesific element (decendant) -->
+		<article>
+			DECENDANT inside article tag
+			<p>This is effected as a direct child  inside &lt;article&gt;</p>
+			<div>
+				<p>This is also effected even though it's not a direct child of &lt;article&gt;</p>
+			</div>
+		</article>
 	</body>
 </html>

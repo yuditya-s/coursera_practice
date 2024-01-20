@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pseudo Class Selectors</title>
+		<style>
+			header li {
+				list-style: none /*none*/
+			}
+			a:link, a:visited { /*link = unvisited*/
+				text-decoration: none;
+				background-color: red;
+				border: 3px solid pink;
+				color: pink;
+				display: block;
+				text-align: left;
+				margin-bottom:2px;
+				width:300px;
+			}
+			a:hover, a:active{ /*active:being clicked*/
+				color: yellow;
+				border: 3px solid yellow;
+				background-color: orange;
+				margin-left:5px;
+				text-align: center;
+
+			}
+			header li:nth-child(2){
+				font-size: 20px;
+			}
+			header li:nth-child(3){
+				font-size: 30px;
+			}
+
+			section div:nth-child(3n-1){
+				background-color: gray;
+			}
+			section div:nth-child(4):hover{
+				background-color: green;
+				cursor: grab;
+			}
+
+			ul:hover li:nth-child(2){
+				background-color: purple;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1> Pseudo Class Selectors</h1>
+		<header>
+			<ul class="satu">
+				<li><a href="/">Home</a></li>
+				<li><a href="http://goo.gl/VOWl6s" target="blank">AngularJS Course</a></li>
+				<li><a href="http://www.facebook.com/CourseraWebDev" target="blank">Facebook Fan Page</a></li>
+			</ul>
+			<ul>
+				<li>sample</li>
+			</ul>
+		</header>
+		<section>
+			<div>DIV 1</div>
+			<div>DIV 2</div>
+			<div>DIV 3</div>
+			<div>DIV 4</div>
+			<div>DIV 5</div>
+			<div>DIV 6</div>
+			<div>DIV 7</div>
+			<div>DIV 8</div>
+			<div>DIV 9</div>
+			<div>DIV 10</div>
+			<div>DIV 11</div>
+			<div>DIV 12</div>
+			<div>DIV 13</div>
+			<div>DIV 14</div>
+			<div>DIV 15</div>
+			<div>DIV 16</div>
+			<div>DIV 17</div>
+			<div>DIV 18</div>
+			<div>DIV 19</div>
+			<div>DIV 20</div>
+		</section>
+	</body>
+</html>

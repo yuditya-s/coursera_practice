@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Setting font size</title> 
+		<link rel="stylesheet" href="xxx.css">
+		<style>
+			body{
+				font-size:120%;
+			}
+		</style>
+	</head>
+	<body>
+		<div>Regular Text</div>
+		<div style="font-size: 2em;"> <!-- 1em = 16px; 16px is default font size-->
+			2em text <!-- By saying "2em" means a child will takes 2 times of parent's set -->
+			<div style="font-size: 2em;">
+				4em text
+				<div style="font-size: .5em;">2em again!</div>
+			</div>
+		</div>
+	</body>
+</html>

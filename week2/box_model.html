@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Box Model</title> 
+		<style>
+			body{
+				margin:0; /*resetting the browser user agent stylesheet*/
+				background-color: gray;
+			}
+			#box{
+				padding: 5px 1px 1px 1px;
+				background-color: blue;
+				box-sizing:border-box; /*including padding, border, as it's width and length*/
+			}
+			#content{
+				background-color:#90EE90;
+				padding: 15px;
+				border:6px;
+				border-color: black;
+				border-style: dotted; /*border style must be declared, inside border properties or on it's own*/
+				margin: 50px;
+			}
+			h1{
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Box ModelS</h1>
+			<div id="box">
+				<span style="color: white;">lalala</span>
+				<div id="content">This is paragraph.</div>
+			</div>
+	</body>
+</html>

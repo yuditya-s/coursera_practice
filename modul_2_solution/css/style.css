@@ -1,1 +1,75 @@
-
+<style>
+			*{
+				box-sizing: border-box;
+			}
+			.row{
+				width: 97%;
+			}
+			div > section{
+				border: 5px solid black;
+				margin: 5px;
+				background-color: gray;
+				float:left;
+			}
+/*			Dekstop view*/
+			@media(min-width: 992px){
+				.col-lg-4{
+					width: 31%;
+				}
+			}
+			/*Tablet View*/
+			@media(min-width: 768px) and (max-width: 991px){
+				.col-md-6 {
+					width: 40%;
+					float:left;
+				}
+				
+			}
+/*			Mobile view*/
+			@media(max-width: 768px){
+				.col-sm-12 {
+					width: 99%;
+					float:left;
+				}
+			}
+			h1{
+				text-align: center;
+				font-weight: 900;
+				font-size: 175%;
+			}
+			#rafting{
+				border: 2px solid black;
+				background-color: red;
+				width: 60px;
+				text-align: center;
+				padding: 5px;
+				color: white;
+				float:right;
+			}
+			#hiking{
+				border: 2px solid black;
+				background-color: blue;
+				width: 100px;
+				text-align: center;
+				padding: 5px;
+				color: white;
+				float:right;
+			}
+			#culinary{
+				border: 2px solid black;
+				background-color: yellow;
+				width: 70px;
+				text-align: center;
+				padding: 5px;
+				color: orange;
+				float:right;
+			}
+			.content{
+				padding: 3px;
+				position: relative;
+/*				top: 30px;*/
+			}
+			.dummy{
+				height: 30px;
+			}
+		</style>
